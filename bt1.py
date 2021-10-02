@@ -1,9 +1,12 @@
 import pandas as pd
 
-series_ex = {"a":[1, 4, 6, 7, 8], "b":[23, 12, 56, 8, 22], "c":[87, 65, 43, 11, 34]}
-
-series_data = pd.DataFrame(dataframe_ex)
-
-print(series_data)
-print("Xuat ra cot dau cua series")
-print(series_data.iloc[:, 0])
+dataframe_ex = {"a":[1, 3, 5, 7, 9], "b":[-2, 4, 6, 8, 22], "c":[23, 45, 44, 54, 64]}
+df= pd.DataFrame(dataframe_ex)
+print(df)
+print('In ra cot dau cua 1 data frame')
+print(df['a'])
+print('In ra hang dau tien cua 1 data frame')
+print(df.loc[0])
+print('In ra phan tu dau cua 1 series')
+series_data = pd.Series([1, 3, 5, 7, 9])
+print(series_data[1])
